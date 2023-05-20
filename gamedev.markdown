@@ -4,9 +4,9 @@ title: Gamedev
 permalink: /gamedev/
 ---
 
-## Various game dev stuff
+# Various game dev stuff
 
-'m not game developer, but why not?..  
+I'm not game developer, but why not?..  
 
 Mainly I'm playing with [DragonRuby Game Toolkit](https://dragonruby.org/toolkit/game), because I love ruby and this is the easiest way to play with graphics in cross-platform way. 
 
