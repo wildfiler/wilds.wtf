@@ -1,0 +1,28 @@
+{% assign posts = site.posts %}
+
+<section>
+{%- if posts.size > 0 -%}
+  {%- if page.list_title -%}
+    <h2>{{ page.list_title }}</h2>
+  {%- endif -%}
+
+  {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+  {%- for post in posts -%}
+  <article>
+    <header>
+      <h4>
+        <span>{{ post.date | date: date_format }}</span>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </h4>
+    </header>
+    <main>
+    {%- if site.show_excerpts -%}
+    {{ post.excerpt }}
+    {%- endif -%}
+    </main>
+  </article>
+  {%- endfor -%}
+{%- endif -%}
+</section>

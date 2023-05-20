@@ -1,0 +1,42 @@
+body > header > nav > ul {
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+
+  li {
+    display: inline;
+    text-transform: uppercase;
+    margin-right: 2rem;
+  }
+}
+
+body > footer {
+  a {
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      border-bottom: none;
+    }
+
+    > img {
+      margin-bottom: 0;
+    }
+  }
+
+  display: flex;
+  justify-content: flex-end;
+
+  ul {
+    list-style-type: none;
+  }
+}
+
+blockquote {
+  margin-right: 1rem;
+  margin-left: 1rem;
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0.25rem;
+  }
+}
