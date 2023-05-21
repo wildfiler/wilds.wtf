@@ -2,13 +2,8 @@
 layout: base
 ---
 <article>
+  <h1 class="post-title">{{ page.title | escape }}</h1>
 
-  <header>
-    <h1 class="post-title">{{ page.title | escape }}</h1>
-  </header>
-
-  <main>
-    {{ content }}
-  </main>
+  {{ content }}
 
 </article>
