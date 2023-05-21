@@ -11,14 +11,4 @@ layout: base
     {{ content }}
   </main>
 
-
-  tags: {{ page.tags }}
-  {%- if page.tags -%}
-    <footer>
-      {% for tag in site.tags %}
-      <h3>{{ tag[0] }}</h3>
-      {% endfor %}
-    </footer>
-  {%- endif -%}
-
 </article>
